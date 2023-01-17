@@ -6,7 +6,6 @@ const User=require('../models/user');
 const keys=require('../config/keys');
 
 
-
 //fetch user id and generate cookie id
 passport.serializeUser((user,done)=>{
     done(null,user.id); 
