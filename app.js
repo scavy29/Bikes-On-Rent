@@ -13,10 +13,12 @@ const Handlebars=require('handlebars');
 const socketIO=require('socket.io');
 const http=require('http');
 
+
 //init app
 const app = express();
 
 
+require('dotenv').config();
 //Setup Body Parser MIddlewware
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
