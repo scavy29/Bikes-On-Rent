@@ -5,6 +5,9 @@ const User=require('../models/user');
 //Load keys file
 const keys=require('../config/keys');
 
+
+require('dotenv').config()
+
 //fetch user id and generate cookie id
 passport.serializeUser((user,done)=>{
     done(null,user.id); 
@@ -18,6 +21,7 @@ passport.deserializeUser((id,done)=>{
 
 // facebookStratergy
 passport.use(new facebookStrategy({
+    clientID:keys.FBAppId,
     clientID:keys.FBAppId,
     clientSecret:keys.FBAppSECRET,
     callbackURL:'http://localhost:8000/auth/facebook/callback',

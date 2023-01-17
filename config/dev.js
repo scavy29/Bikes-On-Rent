@@ -11,3 +11,5 @@ module.exports={
     StripeSecretKey:'sk_test_51LigAqSJS6rde19BuQB6FNJucZDa6FIl18CKCR98ALBGwuYDXC3TyeHikkN3gpA5J2f5wceLB3F85KyfSWPIp26A00BkDlUyvZ'
 };
 
+
+
