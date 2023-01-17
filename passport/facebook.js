@@ -19,6 +19,7 @@ passport.deserializeUser((id,done)=>{
 });
 
 // facebookStratergy
+console.log(keys.FBAppId);
 passport.use(new facebookStrategy({
     clientID:keys.FBAppId,
     clientSecret:keys.FBAppSECRET,
