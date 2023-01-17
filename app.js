@@ -3,7 +3,8 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const mongoose=require('mongoose');
 const bodyParser=require('body-parser');
-const session=require('express-session');
+// const session=require('express-session');
+const session=require('cookie-session');
 const cookieparser=require('cookie-parser');
 const passport=require('passport'); 
 const bcrypt=require('bcryptjs');
@@ -23,6 +24,7 @@ app.use(bodyParser.json());
 app.use(cookieparser());
 app.use(session({
     secret:'mysecret',
+    maxAge:6000,
     resave:true,
     saveUninitialized:true
 }));
