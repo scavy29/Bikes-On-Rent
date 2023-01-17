@@ -1,0 +1,37 @@
+<div class="bgrentinfo"><div class="row">
+    <div class="col-sm"></div>
+        <div class="col-sm-5">
+    <form action="/calculate" method="POST">
+    <div class="form-group">
+        <br>
+        <label for="sdate">Pick Up Date & Time</label>
+        <input type="date" name="sdate" class="form-control" required><br>
+        <input type="time" name="stime" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="edate">Drop Date & Time</label>
+        <input type="date" name="edate" class="form-control" required><br>
+        <input type="time" name="etime" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="type">Type</label>
+        <select name="type" id="type" class="form-control">
+            <option>--Select Type--</option>
+            <option value="Scooter">Ather 340 2016</option>
+            <option value="SportsBike">Yamaha R15 2015</option>
+            <option value="Cruiser">Royal Enfield Himalayan 2020</option>
+            <option value="Adventure">Ather 340 2016</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-info">Next</button>
+        {{!-- <a href="/calculate" class="btn btn-info">Next</a> --}}
+    </div>
+
+    </form>
+    </div>
+        <div class="col-sm">
+    </div>

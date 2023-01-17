@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-sm"></div>
+        <div class="col-sm-5">
+            <br><h1>List a Bike</h1><br>
+    <form action="/listBike" method="POST">
+    <div class="form-group">
+        <label for="make">Make</label>    
+        <input type="text" name="make" id="make" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="model">Model</label>
+        <input type="text" name="model" id="model" class="form-control" required>
+        </div>
+
+    <div class="form-group">
+        <label for="year">Year</label>
+        <input type="number" name="year" id="year" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="type">Type</label>
+        <select name="type" id="type" class="form-control">
+            <option>--Select Type--</option>
+            <option value="Scooter">Scooter</option>
+            <option value="SportsBike">SportsBike</option>
+            <option value="Cruiser">Cruiser</option>
+            <option value="Adventure">Adventure</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Next</button>
+    </div>
+
+    </form>
+    </div>
+        <div class="col-sm">
+    </div>

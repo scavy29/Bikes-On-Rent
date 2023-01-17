@@ -1,0 +1,26 @@
+{{#each bikes}}
+<div class="media">
+  <img src="{{owner.image}}" class="mr-3" alt="..." width="64px;" height="64px;">
+  <div class="media-body">
+    <h5 class="mt-0">{{make}} {{model}} {{year}} ({{type}})</h5>
+    <div class="row">
+      {{#each image}}
+      <div class="col-sm">
+        <img src="{{imageUrl}}" class="image-fluid">
+      </div>
+    {{else}}
+    <img src="/image/bike.png" alt="" width="300px;" height="auto">
+    {{/each}}
+    </div>
+    <b>Rs.{{pricePerWeek}} per week/</b>
+    <b>Rs.{{pricePerHour}} per hour</b>
+    <p>Address: {{location}}</p>
+    {{!-- <button type="submit" class="btn btn-success  ">Rent</button> --}}
+    <a href="/rentBike" class="btn btn-info">Rent</a>
+    <small>Listed on: {{date}}</small>
+    </div>
+</div>
+<hr>
+{{else}}
+<p>No Bikes Found</p>
+{{/each}}

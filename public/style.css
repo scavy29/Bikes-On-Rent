@@ -1,0 +1,51 @@
+img{
+    border-radius: 20px;
+}
+.center{
+    text-align: center;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+
+.centre1{
+    color: black;
+}
+
+.bgrentinfo{
+    background-image: url('./image/bikegif.jpg');
+    background-repeat: no-repeat;
+}
+
+.butttonforpay{
+    position: relative;
+    margin-left: 46%;
+}
+
+.catlist{
+    position: relative;
+    margin-left: 44%;
+}
+
+.security{
+    position: relative;
+    margin-left:38%;
+    margin-top: 20px;
+}
+
+.note{
+    margin-left: 28%;
+}
+
+.payusing{
+    position: relative;
+    margin-left: 525px;
+}
+
+.razorpay{
+    position: relative;
+    margin-left: 475px;
+}
