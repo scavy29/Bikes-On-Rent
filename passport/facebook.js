@@ -18,6 +18,7 @@ passport.deserializeUser((id,done)=>{
 });
 
 // facebookStratergy
+/*
 passport.use(new facebookStrategy({
     clientID:keys.FBAppId,
     clientSecret:keys.FBAppSECRET,
@@ -52,3 +53,4 @@ passport.use(new facebookStrategy({
         }
     })
 }));
+*/
