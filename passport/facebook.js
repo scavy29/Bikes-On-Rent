@@ -19,7 +19,8 @@ passport.deserializeUser((id,done)=>{
 
 // facebookStratergy
 
-passport.use(new facebookStrategy({
+passport.use(
+    new facebookStrategy({
     clientID:keys.FBAppId,
     clientSecret:keys.FBAppSECRET,
     callbackURL:'http://localhost:8000/auth/facebook/callback',

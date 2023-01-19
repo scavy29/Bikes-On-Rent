@@ -19,6 +19,7 @@
     "formidable": "^2.1.1",
     "handlebars": "^4.7.7",
     "http": "^0.0.0",
+    "latest-version": "^7.0.0",
     "mongoose": "^6.8.0",
     "multer": "^1.4.1",
     "multer-s3": "^2.9.0",

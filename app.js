@@ -12,7 +12,9 @@ const formidable=require('formidable');
 const Handlebars=require('handlebars');
 const socketIO=require('socket.io');
 const http=require('http');
+const dotenv=require('dotenv');
 
+// require(dotenv).config()
 
 //init app
 const app = express();
