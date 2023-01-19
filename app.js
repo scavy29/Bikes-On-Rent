@@ -13,8 +13,9 @@ const Handlebars=require('handlebars');
 const socketIO=require('socket.io');
 const http=require('http');
 const dotenv=require('dotenv');
+const path = require('path')
 
-require(dotenv).config()
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
 
 //init app
 const app = express();
