@@ -17,7 +17,7 @@ const http=require('http');
 //init app
 const app = express();
 
-
+//Env Variable
 require('dotenv').config();
 //Setup Body Parser MIddlewware
 app.use(bodyParser.urlencoded({extended:false}));
